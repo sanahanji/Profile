@@ -41,11 +41,11 @@
 
       <nav class="nav-menu">
         <ul>
-          <li><a href="#profile"><i class="bx bx-user"></i> <span>Profile</span></a></li>
-          <li><a href="#price"><i class="bx bx-file-blank"></i> <span>Future Price Pridiction</span></a></li>
-          <li><a href="#growth"><i class="bx bx-book-content"></i>Farm Growth Chart</a></li>
+          <li><a href="#profile"><i class="bx bx-user"></i> <span>Profile</span></a></li>          
+          <li><a href="#post"><i class="bx bx-server"></i>Post/Get</a></li>
           <li><a href="#offer"><i class="bx bx-server"></i>Offers/Discounts</a></li>
-          <li><a href="feed.html"><i class="bx bx-server"></i>Feed</a></li>
+          <li><a href="#order"><i class="bx bx-server"></i> Order History</a></li>
+          <li><a href="#buyer"><i class="bx bx-envelope"></i> Buyer List</a></li>
         </ul>
       </nav><!-- .nav-menu -->
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
@@ -84,37 +84,37 @@
         </div>
     </section><!-- End Profile Section -->
 
-    <!-- ======= Price Section ======= -->
-    <section id="price" class="skills section">
+    <!-- ======= post Section ======= -->
+    <section id="post" class="services">
       <div class="container">
-        <div class="section-title">
-          <h2>Price rate for next week : </h2>
+        <div class="section-title" style="color: white">
+          <h2>Post Your Material:</h2>
+          <div class="row">
+            <div class="col-lg-4">
+              <label for="Crop_name">Crop Name :</label>
+                <select name="cropname" id="cropname">
+                  <option>Rice</option>
+                  <option>Barley</option>
+                  <option>Cotton</option>
+                </select>
+            </div>
+            <div class="col-lg-4">
+              <label>Quantity :</label>
+              <input type="number" name="quantity" class="post">
+            </div>
+            <div class="col-lg-4">
+              <label for="unit">Unit :</label>
+              <select name="unit" id="unit">
+              <option>Kg</option>
+              <option>Dozen</option>
+              <option>ton</option>
+              </select><br>
+            </div>
+          </div>
+          <center><button>Post</button></center>
         </div>
-        <table>
-        	<tr>
-        		<th>Crop Name</th>
-        		<th>Monday</th>
-        		<th>Tuesday</th>
-        		<th>Wednesday</th>
-        		<th>Thursday</th>
-        		<th>Friday</th>
-        	</tr>
-        	<tr>
-				<th><select name="cropname" id="cropname">
-          				<option>Rice</option>
-          				<option>Barley</option>
-          				<option>Cotton</option>
-          			</select></th>
-        		<th><input type="text" name="monnval" value="23 per kg" class="tablein"></th>
-        		<th><input type="text" name="monnval" value="23 per kg" class="tablein"></th>
-        		<th><input type="text" name="monnval" value="23 per kg" class="tablein"></th>
-        		<th><input type="text" name="monnval" value="23 per kg" class="tablein"></th>
-        		<th><input type="text" name="monnval" value="23 per kg" class="tablein"></th>
-        	</tr>
-        	</tr>
-        </table>
       </div>
-    </section><!-- End Price Section -->
+    </section><!-- End post Section -->
 
     <!-- ======= Growth Section ======= -->
     <section id="growth" class="growth">
@@ -261,6 +261,91 @@
       </div>
     </section><!-- End Offer Section -->
 
+    <!-- ======= Order Section ======= -->
+    <section id="order" class="testimonials section">
+      <div class="container">
+        <div class="section-title" style="color: white">
+          <h2>Oders Placed</h2>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Item name</th>
+              <th>Quantity</th>
+              <th>Farmer name</th>
+              <th>Price</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <th>2/11/19</th>
+              <th>Rice</th>
+              <th>26kg</th>
+              <th>ABC</th>
+              <th>Rs.565</th>
+              <th>Packing</th>
+            </tr>
+            <tr>
+              <th>12/9/19</th>
+              <th>barley</th>
+              <th>22kg</th>
+              <th>AdwwsaC</th>
+              <th>Rs.340</th>
+              <th>Dispatched</th>
+            </tr>
+            <tr>
+              <th>16/7/19</th>
+              <th>Cotton</th>
+              <th>15kg</th>
+              <th>Ksued</th>
+              <th>Rs.250</th>
+              <th>Delivered</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section><!-- End Order Section -->
+
+    <!-- ======= Buyer Section ======= -->
+    <section id="buyer" class="contact">
+      <div class="container">
+        <div class="section-title" style="color: white">
+          <h2>Buyer's List</h2>
+          <table>
+            <tr>
+              <th>Date</th>
+              <th>Item name</th>
+              <th>Quantity</th>
+              <th>Rating</th>
+              <th>Price</th>
+              <th>Status</th>
+            </tr>
+            <tr>
+              <th>2/11/19</th>
+              <th>Rice</th>
+              <th>26kg</th>
+              <th><span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span></th>
+              <th>Rs.565</th>
+              <th>Packing</th>
+            </tr>
+            <tr>
+              <th>12/9/19</th>
+              <th>barley</th>
+              <th>22kg</th>
+              <th><span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span> <span class="fa fa-star"></span></th>
+              <th>Rs.340</th>
+              <th>Dispatched</th>
+            </tr>
+            <tr>
+              <th>16/7/19</th>
+              <th>Cotton</th>
+              <th>15kg</th>
+              <th><span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span class="fa fa-star"></span></th>
+              <th>Rs.250</th>
+              <th>Delivered</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section><!-- End buyer Section -->
 
   </main><!-- End #main -->
 
