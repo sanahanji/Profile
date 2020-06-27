@@ -18,6 +18,10 @@ input, .profile{
   color: white;
 }
 
+select{
+  width: 150px
+}
+
 .growth{
   color: white;
 }
@@ -35,7 +39,7 @@ table{
 input, .tablein{
   background: transparent; 
   border: transparent;
-  width: 90px
+  width: 200px
 }
 
 input, .post{
@@ -45,6 +49,7 @@ input, .post{
 
 thead,th{
   height: 30px;
+  font-size: 20px;
 }
 
 .checked{

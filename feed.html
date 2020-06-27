@@ -52,8 +52,7 @@
           <li><a href="#profile"><i class="bx bx-user"></i> <span>Profile</span></a></li>          
           <li><a href="#post"><i class="bx bx-server"></i>Post/Get</a></li>
           <li><a href="#offer"><i class="bx bx-server"></i>Offers/Discounts</a></li>
-          <li><a href="#order"><i class="bx bx-server"></i> Order History</a></li>
-          <li><a href="#buyer"><i class="bx bx-envelope"></i> Buyer List</a></li>
+          <li><a href="#order"><i class="bx bx-server"></i>Cart</a></li>
         </ul>
       </nav><!-- .nav-menu -->
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
@@ -83,11 +82,15 @@
                 	</ul>
             	</div>
 	            <div class="col-lg-6 col-12" data-aos="fade-right">
-    	      		<h3>Select Your Crop : </h3>
-          			<input type="checkbox" id="Rice" name="Rice" value="Rice"><label for="Rice"> Rice</label><br>
-          			<input type="checkbox" id="Wheat" name="Wheat" value="Wheat"><label for="Wheat"> wheat</label><br>  
-      				<img src="assets/img/grp.jpg" style="width: 250px;height: 250px">
-      			</div>
+                <h3>Select Your Crop : </h3>
+                <th><select name="cropname" id="cropname">
+                  <option>Rice</option>
+                  <option>Barley</option>
+                  <option>Cotton</option>
+                </select>
+                </th><br><br>
+              <img src="assets/img/grp.jpg" style="width: 250px;height: 250px">
+            </div>
       		</label>
         </div>
     </section><!-- End Profile Section -->
