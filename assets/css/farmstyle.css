@@ -1,13 +1,135 @@
-/**
-* Template Name: iPortfolio - v1.3.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+
+
+.tbcard{
+  text-align: center;
+  margin: 10px;
+}
+
+
+.card1{
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  margin-top: 10px;
+  margin:white;
+  border: 2px solid white;
+}
+
+
+.tablescrp{
+  color: black;
+}
+
+.tablescrp th{
+  size: 15px;
+}
+
+
+.property-card
+{
+  margin-top: 15px;
+  border: white;
+  height:15em;
+  width:14em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+}
+
+/* Top Half of card, image. */
+
+.property-image
+{
+  height:10em;
+  width:14em;
+  padding:1em 2em;
+  position:Absolute;
+  border-color: black
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+/* Bottom Card Section */
+
+.property-description
+{
+  background-color: #FAFAFC;
+  height:5em;
+  width:14em;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+}
+
+
+
+
+
+.container1 {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-gap: 50px;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-family: 'Baloo Paaji 2', cursive;
+}
+
+.crpsct{
+
+}
+
+.card {
+  background-color: #222831;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.7);
+  color: white;
+  margin-top: 10px;
+}
+
+.card__name {
+  margin-top: 15px;
+  font-size: 1.5em;
+}
+
+.card__image {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  border: 5px solid #272133;
+  margin-top: 20px;
+  box-shadow: 0 10px 50px rgba(235, 25, 110, 1);
+}
+
+
+
+
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -49,7 +171,7 @@ input, .post{
 
 thead,th{
   height: 30px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .checked{
